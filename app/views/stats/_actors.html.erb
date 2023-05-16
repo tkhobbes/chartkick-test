@@ -1,0 +1,10 @@
+<h3>Navigation</h3>
+<ul>
+  <li><%= link_to 'by rating', root_path(type: 'rating'), target: :actor_statistics %></li>
+  <li><%= link_to 'by ABC', root_path(type: 'abc'), target: :actor_statistics %></li>
+</ul>
+
+
+<%= turbo_frame_tag :actor_statistics do %>
+  <%= render 'stats/actors/actor' %>
+<% end %>

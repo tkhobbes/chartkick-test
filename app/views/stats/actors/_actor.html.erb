@@ -1,0 +1,5 @@
+<% if params[:type] %>
+  <%= render "stats/actors/by_#{params[:type]}" %>
+<% else %>
+<p>Select from the navigation above.</p>
+<% end %>
